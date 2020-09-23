@@ -73,13 +73,6 @@ Downtown stops tend to have higher variance (as one might expect) while travel t
 - Collect data long-term to analyze trends
 - Develop a model for bus arrival times in Berlin (data is structured very differently and does not come in GTFS-realtime format)
 
-## Tech stack
-
-- Download: AWS EC2
-- Database: PostgreSQL (on AWS RDS)
-- Modeling: sklearn
-- Visualisation: geopandas, geoplot, matplotlib
-
 
 
 
