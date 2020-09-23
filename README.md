@@ -1,4 +1,4 @@
-# Project to predict bus arrival times in Portland
+# Visualizing bus traffic and predicting bus arrival times in Portland
 
 Intro:
 
@@ -7,25 +7,82 @@ Intro:
 
 
 
+## Data collection
+
+- Process: 
+- data format: gtfs realtime
+
+
+
 ## Explorative visualisations
 
-Rush hour traffic
+### Rush hour traffic
 
-![](1_rush_hour.gif)
+<img src="pictures/1a_rush_hour.gif"  />
 
-1 point at 1 moment = 1 observation
+Downtown looks quite jammed, so let's zoom in to get a better view:
 
+![](pictures/1b_rush_hour_downtown.gif)
 
+### Line 20
 
+- most important bus line in portland - traverses whole city, frequent, 24/7
+- no of stops
 
+![](pictures/2a_line_20_stops.png)
 
-Line 20
+**Variance of travel times by stop**
 
-![](2_line_20_stops.png)
+- stops with a high variance: sometimes bus passes quickly, sometimes it takes very long --> difficult to predict
+- high variance in stops downtown (makes intuitive sense)
 
 Line 20 variance
 
-![](3_line_20_stop_var.png)
+![](pictures/2b_line_20_stop_var.png)
+
+**Total trip time...**
+
+...varies quite a bit during the day...
+
+<img src="pictures/3a_travel_time_hour.png" style="zoom:50%;" />
+
+...but not between weekdays 
+
+<img src="pictures/3b_travel_time_weekday.png" style="zoom:50%;" />
+
+
+
+## Modeling
+
+<img src="pictures/4_modeling.png"  />
+
+
+
+## Results
+
+<img src="pictures/5a_results.png"  />
+
+<img src="pictures/5b_results.png"  />
+
+<img src="pictures/5c_results.png"  />
+
+
+
+## Next steps / ideas for exploration
+
+- Fine-tune model to improve short-term predictions
+- Create a dashboard for real-time transit analysis
+- Collect data long-term to analyze trends
+- Develop a model for bus arrival times in Berlin (data structures vary)
+
+
+
+## Tech stack
+
+- Download: AWS EC2
+- Database: PostgreSQL (on AWS RDS)
+- Modeling: sklearn
+- Visualisation: geopandas, geoplot, matplotlib
 
 
 
