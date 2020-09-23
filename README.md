@@ -42,15 +42,9 @@ Line 20 variance
 
 **Total trip time...**
 
-...varies quite a bit during the day...
+...varies quite a bit during the day, but not between weekdays.
 
-<img src="pictures/3a_travel_time_hour.png" style="zoom:50%;" />
-
-...but not between weekdays 
-
-<img src="pictures/3b_travel_time_weekday.png" style="zoom:50%;" />
-
-
+![](pictures/3_travel_time.png)
 
 ## Modeling
 
