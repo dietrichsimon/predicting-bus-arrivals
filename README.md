@@ -72,8 +72,3 @@ Downtown stops tend to have higher variance (as one might expect) while travel t
 - Create a dashboard for real-time transit analysis
 - Collect data long-term to analyze trends
 - Develop a model for bus arrival times in Berlin (data is structured very differently and does not come in GTFS-realtime format)
-
-
-
-
-
